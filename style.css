@@ -1,0 +1,1967 @@
+
+/* Основная область */
+
+
+/* **************************FLEX     картинки */
+
+
+a {
+	text-decoration: none;
+}
+
+.our-serv {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 15px;
+}
+
+.square {
+	width: 175px;
+}
+
+.rectangle {
+	width: 330px;
+}
+
+.square,
+.rectangle {
+	height: 170px;
+	position: relative;
+}
+
+.serv-name {
+	height: 42px;
+	background-color: #333333;
+	color: #fff;
+	font-size: 16px;
+	width: 100%;
+	position: absolute;
+	display: flex;
+	align-items: center;
+	bottom: 0;
+	left: 0;
+	background-position: right bottom;
+	background-repeat: no-repeat;
+	background-image: url(https://avtoelektrik-moskva.ru/wp-content/uploads/2022/03/serv-decor.svg);
+}
+
+.serv-name > a {
+	padding-left: 10px;
+	color: #fff;
+}
+
+.square > img,
+.rectangle > img {
+	display: block;
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+
+.read-more {
+	display: none;
+}
+
+@media (max-width: 768px) {
+	.square {
+		width: 218px;
+		height: 212px;
+	}
+
+	.rectangle {
+		width: 412px;
+		height: 212px;
+	}
+}
+
+@media (max-width: 425px) {
+	.square {
+		width: 110px;
+		height: 107px;
+	}
+
+	.rectangle {
+		width: 207px;
+		height: 108px;
+	}
+
+	.our-serv {
+		gap: 10px;
+	}
+
+	.serv-name {
+		font-size: 12px;
+	}
+}
+
+
+
+/* ********************************FLEX      PICTURE**************** */
+@media only screen
+and (min-device-width: 769px)
+{
+html{
+    overflow-x: hidden; 
+    
+}
+
+body
+{ 
+    margin-left: auto;
+    max-width: 100%;
+align-items: center;
+}
+button{  
+     height: 50px;
+     border-radius: 6px;
+     text-transform: uppercase;
+     font-family: "Rubik";
+     font-size: 14px;
+     border: none;
+ }
+ button:hover{
+     cursor: pointer;
+ }
+
+ /* ------- стилизация   списка зеленого блока ------- */
+
+.wrapper,
+.block-express,
+.block-express-order{
+    margin-left: auto;
+    margin-right: auto;
+    width: 1100px;
+    align-items: center;
+}
+
+ /*----------------  вводный контент  header-------------- */
+.header{
+    margin-top: 12%;
+    position: relative;
+} 
+
+.container-header{
+    width: 527px;
+    height: 350px;
+    font-family: "Exo 2";
+    font-style: normal;
+    
+}
+.car-header{
+    position: absolute;
+    max-width: inherit;
+    top: 0;
+    right: 0;
+ }
+h1{
+    font-size: 72px;
+    font-weight: 900;
+    color: #008080;
+}
+.container-header p{
+    font-size: 48px;
+    font-weight: bold;
+    color: #333333;
+    margin-top: -5%;
+}
+
+/* --------кнопки вводного контента ---------- */
+.btn-header-master, .btn-header-prices{
+    margin-right: 26px; 
+    width: 190px;
+}
+.btn-header-master, .btn-header-prices:hover{
+    background-color: #008080 ;
+    color: #f0f6f6;
+    
+}
+.btn-header-master:hover{
+    background-color: #00A3A3 ;
+}
+.btn-header-prices{
+    border: 3px solid #008080 ;
+}
+.btn-header-prices{
+    background-color: #e5e5e5; 
+}
+.btn-header-prices:active, .btn-header-master:active {
+    background-color: #008080 ;
+    box-shadow: inset 0px 4px 10px rgba(0,0,0,0.15);
+    color: #eee;
+  }
+
+/*---- 2ой блок   опыт и работа 4е пункта */
+
+
+.article-list{
+    font-size: 18px;
+    line-height: 160%;
+    color:#333333;
+    font-family: "Rubik";
+    margin-top: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    line-height: 160%;
+}
+.article-list div{
+    width: 180px;
+}
+.article-list img{
+    position: absolute;
+    opacity: .1;
+}
+/* ----подчеркивание span------ */
+
+.span-underline{
+    text-decoration-line: underline;
+    text-decoration-color: #FCBE00;
+    text-underline-offset: 15%;
+    text-decoration-thickness: 3px;
+}
+
+/*  ------3ий Для VAG --------- */
+
+
+.article-vag{
+    column-count: 2;
+    column-gap: 45px;
+    margin-top: 20%;
+    font-family: "Rubik";
+    font-size: 24px;
+    line-height: 160%;
+    color: rgba(51,51,51, 0.8);
+    
+}
+/* --------------------H2 заголовок  марок авто------------ */
+.article-vag h2,
+.container-box{
+    margin-top: 0;
+    font-family: "Exo 2";
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 48px;
+    color: #333333;
+} 
+.block-item{
+    white-space: normal;	
+}
+.block-item-right{
+    float: right;
+}
+
+/* ----   --------  как заказать выезд специалиста--------- */
+.repairs-item .text-departure{
+    font-size: 40px;
+ line-height: 48px; 
+}
+.text-departure{
+    margin-top:0;
+}
+.repairs-item p{
+    line-height:160%;
+}
+
+.repairs-item strong span{
+    color: #FCBE00;
+}
+.map-item{
+    font-family: "Exo 2";  
+}
+.right-green-list,
+.map-item{
+    float: right;
+}
+
+/* ------------   аккордеон   8 пунктов      ----------------------------------*/
+details[open] summary ~ * {
+    animation: sweep .5s ease-in-out;
+  }
+  
+  @keyframes sweep {
+    0%    {opacity: 0; margin-left: -10px}
+    100%  {opacity: 1; margin-left: 0px}
+  }
+  .elem-p-details{
+      margin-top: 0;
+  }
+  details > summary {
+    border: none;
+    cursor: pointer;
+    list-style: none;
+  }
+  details p a{
+      font-size: 16px;
+      opacity: 0.4;
+      line-height: 160%;
+      text-decoration: none;
+      color: #333333;
+      font-family:"Rubik";
+      margin-top: 0px;
+  }
+
+  details p a:hover{
+    color:#008080;
+  }
+
+  details p a:link{
+      opacity: 0.7;
+  }
+  .hr{
+    margin-top: 0px;
+  }
+
+details, summary{
+    margin:0;
+    padding: 0;
+}
+.article-repairs .accordeon{
+    font-weight: 500;
+     font-family: "Exo 2";
+     font-size: 24px;
+     line-height: 160%;
+     color: #333333;
+     margin-right: 40px; 
+ }
+ .accordeon .elem-p{
+       margin-top: 8%;
+ }
+ .icon-left{
+     padding-right: 10px;
+ }
+ .arrow-right{
+     float: right;
+ }
+ .arrow-down{
+    float: right;
+    margin-top: -35px;
+    background-color: white;
+ }
+ hr{
+     margin-top: -5%;
+     padding: 0;
+     background-color: #008080;
+     color:#008080;
+     border: none;
+     height: 1px;
+ }
+
+
+
+ /*   ------------  кнопка позвонить мастеру после аккордеона -------------- */
+
+ .btn-block-center{
+    display: flex;
+  justify-content: center;
+  margin-top: 5%;
+ }
+
+ /*   -----  картинки диагностика article  с описанием   --- */
+     
+  /* --------картинка       (далее список к картинкам)    ---------- */
+
+
+.img-left, 
+.img-right{
+    z-index: 1;
+    height: 100%;
+}
+
+.img-left,
+.list-diagnostic-left{
+    left: 0;
+    position: absolute;
+   
+}
+.img-right,
+.list-diagnostic-right,
+.list-diagnostic-descrptn{
+    right: 0;
+    position: absolute;
+}
+.img-descrptn{
+    position: relative;
+    margin: 0;
+    margin-top: 10%;
+    height: 541px; 
+}
+
+/*              определение      список  (к картинке)    -----------------     */ 
+
+.list-diagnostic-right,
+.list-diagnostic-descrptn,
+.list-diagnostic-left{
+    background-color: #FAFDFD;
+    width: 52%;
+    height: 450px; 
+  top: 8%;
+  font-family: "Rubik";
+  font-size: 16px;
+  color: #333333;
+  z-index: 2;
+}
+
+/* --------первый параграф в списке ----------*/
+ 
+.list-diagnostic-right p,
+.list-diagnostic-left p,
+.list-diagnostic-descrptn p{
+    margin-left: 8%;
+    margin-right: 8%;
+    line-height: 160%;
+    color: #333333;
+    margin-top: 1%;
+}
+.list-diagnostic-right{
+    background-color: #FAFDFD;
+    z-index: 2;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+figcaption h4{
+    font-size: 18px;
+    font-family: "Exo 2";
+    font-weight: bold;
+    padding-top:7%; 
+    margin-left: 8%;
+    margin-right: 8%;
+    line-height: 160%;
+}
+figcaption .text-two{
+    font-size: 16px;
+}
+ .paragr-list p{
+    margin-bottom: 10%;
+}
+/*  --------  общий стиль списка figcaption  параграфов----------*/
+
+
+/*  ----------   контенер картинок транспорта   ------------------ */
+
+.container_transport{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 2%;
+}
+
+ /* ----------------- описание картинок стилизация ------------ */
+
+.container_transport figcaption{
+  font-size: 18px;
+  line-height: 28.8px;
+  color: #333333;
+  font-family: "Rubik";
+  font-weight: 500;
+}
+
+
+/* ------------    зеленый контейнер ЗВОНИ!    ---------- */
+
+
+.container-green-express{
+    margin-top: 15%;
+    height: 400px;
+    background-color: #008080;
+    position: relative;
+
+}
+.right-img-group{
+    right: 0;
+}
+.left-img-group,
+.right-img-group{
+    position: absolute;
+}
+
+.block-express-order,
+.block-express{
+    z-index: 2;
+    position: relative;
+    margin: 0 auto; 
+    color: #FAFDFD;
+    font-family:"Rubik";
+    align-items: center;
+   
+}
+.block-express{  
+    text-align: center;
+    font-size: 36px;  
+    line-height: 43px;
+    top: 12%;
+  }
+.block-express h2 strong{
+    font-size: 72px;
+    font-weight: bold;
+    line-height: 86px;
+    font-family: "Exo 2";
+}
+.text-opasity{
+    opacity: 0.6;
+}
+.btn-express{
+    background-color: #FCBE00;
+    width: 230px;
+    height: 50px;
+    font-size: 14px;
+    color: #333333;
+}
+.btn-express-call{
+    margin-top: 5%;
+}
+.btn-express:hover{
+    background-color: #FFD145;
+}
+.btn-express:active{
+    box-shadow: inset 0px 4px 10px rgba(0,0,0,0.15);
+}
+.block-express-order .right-green-list p{
+margin-bottom: 6%;
+line-height: 160%;
+}
+
+/* --------------4картинка с картинками----------------- */
+
+.cars-item{
+height: 60px;
+ }
+.indent-span{
+     padding-left: 5%;
+     margin-top: 3.5%; 
+     position:absolute;
+}
+
+
+/*    -----------       карта москвы и ремонт  список-----------  */
+
+.article-repairs{
+    padding-top: 5%;
+    white-space: nowrap; 
+}
+.block-express{
+    padding-top: 0.3%;
+}
+.repairs-item {
+	white-space: normal;	
+	 display: inline-block; 
+	 width: 527px; 
+	vertical-align: top;
+    font-family: "Rubik";
+    font-size: 18px;
+}
+
+         /*----------- H2    заголовок   марок  авто   H2  ------------- */
+.container-box{
+    margin-top: 40%;
+    text-align: center;
+}
+
+
+.vector-right{
+    float: right;
+}
+/*      -----------       карусель марок  машин  ----------- */
+
+
+.center{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    width: 9em;
+ 
+}
+.pagination a {
+    color: black;
+    margin-left: 20px;
+    text-decoration: none;
+
+}
+
+.pagination a.active {
+    background-color: #FCBE00;
+    color: white;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
+.dot {
+    height: 10px;
+    width: 10px;
+    background-color: #DCE8FF;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+.slider {
+	height: 100px;
+	overflow: hidden;
+	margin-bottom: 20px;
+    margin-right: 170px;
+    width: 1100px;
+	text-align: center;
+}
+.slider ul {
+	margin: 0px;
+
+}
+
+.slider li a{
+	margin-left: 3%;
+	margin-right: 3%;
+	text-decoration: none;
+	color: #333333;
+	font-family: "Rubik";
+  font-size: 16px;
+  display: inline-block;
+}
+/* Кнопки управления */
+.bx-wrapper {
+	position: relative;
+}
+.slider .bx-controls-direction {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 100px;
+}
+.slider .bx-controls-direction a:hover {
+	filter: brightness(90%);
+}
+.slider .bx-prev {
+	background: url(https://snipp.ru/demo/193/prev.png) 0 0 no-repeat; 
+	display: inline-block; 
+	width: 30px;
+	height: 30px;	
+	position: absolute;
+	margin-top: -18px;	
+	top: 50%;
+	left: 0px;
+	overflow: hidden;
+	text-indent: 999px; 
+	z-index: 1000;
+}
+.slider .bx-next {
+	background: url(https://snipp.ru/demo/193/next.png) 0 0 no-repeat;    
+	display: inline-block; 
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	margin-top: -18px;	
+	top: 50%;
+	right: 0px;
+	overflow: hidden;
+	text-indent: 999px;
+	z-index: 1000;
+}
+
+/* Превью */
+.slider_pager ul {
+	margin: 0;
+	padding: 0;
+}
+.slider_pager li {
+	margin: 0 1px 10px 0;
+	display: inline-block;
+}
+
+  /*  ----------зеленый-------- блок -------------- */
+
+.container-flex-pic{
+    margin-top: 8%;   
+}
+
+/* -------------------картинки ------------------ */
+
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top:3%;
+}
+
+:active,
+:hover, 
+:focus {
+   outline: 0;
+   outline-offset: 0;
+}
+.input-style{
+    height: 50px;
+    width: 400px;
+    border-radius: 6px;
+    border: none;
+    line-height: 160%;
+    padding-left: 20px;
+} 
+.repairs-item p.last-text-left{
+    margin-top: 8%;
+}
+/* ***************************марки машин************************* */
+
+.slider-tablet, .slider_pager-tablet, .btn-express-tablet{
+    display: none;
+}
+
+
+
+}
+@media only screen
+and (min-device-width: 361px)
+and (max-device-width: 768px) {
+
+    
+html{
+    overflow-x: hidden; 
+    
+}
+
+body
+{ 
+    margin-left: auto;
+  align-items: center;
+}
+button{  
+     height: 50px;
+     border-radius: 6px;
+     text-transform: uppercase;
+     font-family: "Rubik";
+     font-size: 14px;
+     border: none;
+ }
+ button:hover{
+     cursor: pointer;
+ }
+
+ /* ------- стилизация   списка зеленого блока ------- */
+
+.wrapper,
+.block-express,
+.block-express-order{
+    margin-left: 42px;
+    margin-right: 42px;
+    width: 660px;
+    align-items: center;
+}
+
+ /*----------------  вводный контент  header-------------- */
+.header{
+    margin-top: 12%;
+    position: relative;
+} 
+
+.container-header{
+    width: 527px;
+    height: 350px;
+    font-family: "Exo 2";
+    font-style: normal;
+    
+}
+.car-header{
+    position: absolute;
+    max-width: inherit;
+    top: 0;
+    right: 0;
+ }
+h1{
+    font-size: 72px;
+    font-weight: 900;
+    color: #008080;
+}
+.container-header p{
+    font-size: 48px;
+    font-weight: bold;
+    color: #333333;
+    margin-top: -5%;
+}
+
+/* --------кнопки вводного контента ---------- */
+.btn-header-master, .btn-header-prices{
+    margin-right: 26px; 
+    width: 190px;
+}
+.btn-header-master, .btn-header-prices:hover{
+    background-color: #008080 ;
+    color: #f0f6f6;
+    
+}
+.btn-header-master:hover{
+    background-color: #00A3A3 ;
+}
+.btn-header-prices{
+    border: 3px solid #008080 ;
+}
+.btn-header-prices{
+    background-color: #e5e5e5; 
+}
+.btn-header-prices:active, .btn-header-master:active {
+    background-color: #008080 ;
+    box-shadow: inset 0px 4px 10px rgba(0,0,0,0.15);
+    color: #eee;
+  }
+
+
+
+.container-header{
+    height: 430px;
+}
+.car-header{
+    top: 150px;
+    left: 170px;
+ }
+
+/* --------кнопки вводного контента ---------- */
+.btn-header-master, .btn-header-prices{
+    margin-left: 0px; 
+    display: block;
+}
+
+.btn-header-master{
+    margin-top: 20%;
+}
+.btn-header-master_{
+    bottom:0;
+    position: absolute;
+}
+/*---- 2ой блок   опыт и работа 4е пункта */
+
+.article-list{
+    margin-top: 20%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+.article-list div{
+    width: 180px;
+    margin-top: 15%;
+    margin: 10%;
+}
+
+.article-list img{
+    position: absolute;
+    opacity: .1;
+}
+
+
+.article-list{
+    font-size: 18px;
+    line-height: 160%;
+    color:#333333;
+    font-family: "Rubik";
+    margin-top: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    line-height: 160%;
+}
+.article-list div{
+    width: 180px;
+}
+
+
+/* ----подчеркивание span------ */
+
+.span-underline{
+    text-decoration-line: underline;
+    text-decoration-color: #FCBE00;
+    text-underline-offset: 15%;
+    text-decoration-thickness: 3px;
+}
+
+/*  ------3ий Для VAG --------- */
+
+
+.article-vag{
+    column-count: 1;
+    margin-top: 20%;
+    font-family: "Rubik";
+    font-size: 24px;
+    color: rgba(51,51,51, 0.8);  
+}
+
+/* --------------------H2 заголовок  марок авто------------ */
+
+.article-vag h2,
+.container-box{
+    margin-top: 0;
+    font-family: "Exo 2";
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 48px;
+    color: #333333;
+} 
+  /* --------картинка       (далее список к картинкам)    ---------- */
+
+.img-left, .img-right{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+ 
+ 
+}
+
+  .list-diagnostic-left
+  .list-diagnostic-right,
+  .list-diagnostic-descrptn{
+  background-color: #FAFDFD;
+  height: 450px; 
+  top: 8%;
+  z-index: 2;
+  }
+  .img-descrptn{
+    margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 980px;
+  margin-top: 10%;
+  }
+  .list-diagnostic-right p,
+  .list-diagnostic-left p,
+  .list-diagnostic-descrptn p{
+      margin-left: 8%;
+      margin-right: 8%;
+      line-height: 160%;
+      color: #333333;
+      margin-top: 1%;
+      font-size: 16px;
+      font-family: "Rubik";
+  }
+  figcaption h4{
+    font-size: 18px;
+    font-family: "Exo 2";
+    font-weight: bold;
+    color: #333333;
+    padding-top:7%; 
+    margin-left: 8%;
+    margin-right: 8%;
+    line-height: 160%;
+}
+
+
+.container_transport{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 2%;
+}
+
+ /* ----------------- описание картинок стилизация ------------ */
+
+.container_transport figcaption{
+  font-size: 18px;
+  line-height: 28.8px;
+  color: #333333;
+  font-family: "Rubik";
+  font-weight: 500;
+}
+
+  /* *********** определение      список  (к картинке)    -----------------     */ 
+
+  .container-green-express{
+    margin-top: 20%;
+    height: 440px;
+    background-color: #008080;
+    position: relative;
+ 
+}
+
+.container-green-tablet{
+    height: 706px;
+}
+.container-green_{
+    margin-left: 0;
+    padding-left: 0;
+}
+
+
+.left-img-group,
+.right-img-group{
+    position: absolute;
+    position  : absolute;
+    top       : 50%;
+    /* left      : 50%; */
+    transform : translate(-50%, -50%);
+    
+}
+.right-img-group{
+    right: -36%;
+    height: 408px;
+
+}
+.left-img-group{
+    left: 10%;
+    height: 408px;
+}
+.block-express-order,
+.block-express{
+    z-index: 2;
+    position: relative;
+    margin: 0 auto; 
+    color: #FAFDFD;
+    font-family:"Rubik";
+    align-items: center;
+ 
+   
+}
+.block-express{  
+    text-align: center;
+    font-size: 36px;  
+    line-height: 43px;
+    padding-top: 1%;;
+  }
+.block-express h2 strong
+{
+    font-size: 72px;
+    font-weight: bold;
+    line-height: 86px;
+    font-family: "Exo 2";
+}
+.block-express-order h2 b{
+    font-size: 40px;
+    font-weight: bold;
+    font-family: "Exo 2";
+}
+.text-opasity{
+    opacity: 0.6;
+}
+.btn-express{
+    background-color: #FCBE00;
+    width: 230px;
+    height: 50px;
+    font-size: 14px;
+    color: #333333;
+}
+.btn-express-call{
+    margin-top: 5%;
+}
+.btn-express:hover{
+    background-color: #FFD145;
+}
+.btn-express:active{
+    box-shadow: inset 0px 4px 10px rgba(0,0,0,0.15);
+}
+.block-express-order .right-green-list p{
+margin-bottom: 6%;
+line-height: 160%;
+}
+
+/* --------------4картинка с картинками----------------- */
+
+.cars-item{
+    height: 60px;
+     }
+    .indent-span{
+         padding-left: 5%;
+         margin-top: 3%; 
+         position:absolute;
+    }
+
+    /* ----   --------  как заказать выезд специалиста--------- */
+    
+.repairs-item .text-departure{
+    font-size: 40px;
+ line-height: 48px; 
+}
+.text-departure{
+    margin-top:0;
+}
+.repairs-item p{
+    line-height:160%;
+}
+
+.repairs-item strong span{
+    color: #FCBE00;
+}
+.map-item{
+    font-family: "Exo 2";  
+}
+
+
+/*    -----------       карта москвы и ремонт  список-----------  */
+
+.article-repairs-tablet{
+    padding-top: 20%;
+
+}
+.block-express{
+    padding-top: 0.3%;
+}
+.repairs-item .text-first{
+    font-size: 18px;
+}
+.repairs-item {
+	white-space: normal;	
+	 display: inline-block; 
+	 width: 527px; 
+	vertical-align: top;
+    font-family: "Rubik";
+    font-size: 18px;
+    margin-left: 8%;
+    margin-right: 8%;
+    line-height: 160%;
+}
+
+.container-box-center{
+    text-align: center;
+    margin-top: 30%;
+}
+.slider, .slider_pager, .btn-express-desktop{
+    display: none;
+}
+
+
+
+/*      -----------       карусель марок  машин  ----------- */
+.center{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    width: 15em;
+ 
+}
+.pagination a {
+    color: black;
+    margin-left: 20px;
+    text-decoration: none;
+
+}
+
+.pagination a.active {
+    background-color: #FCBE00;
+    color: white;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
+.dot {
+    height: 10px;
+    width: 10px;
+    background-color: #DCE8FF;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+.slider-tablet {
+	height: 100px;
+	overflow: hidden;
+	margin-bottom: 20px;
+	text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 660px; 
+    align-items: center;
+}
+.slider-tablet ul {
+	margin: 0px;
+}
+
+.slider-tablet li a{
+	margin-left: 3%;
+	margin-right: 3%;
+	text-decoration: none;
+	color: #333333;
+	font-family: "Rubik";
+  font-size: 16px;
+  display: inline-block;
+}
+/* Кнопки управления */
+.bx-wrapper {
+	position: relative;
+}
+.slider-tablet .bx-controls-direction {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 100px;
+}
+.slider-tablet .bx-controls-direction a:hover {
+	filter: brightness(90%);
+}
+.slider-tablet .bx-prev {
+	background: url(https://snipp.ru/demo/193/prev.png) 0 0 no-repeat; 
+	display: inline-block; 
+	width: 30px;
+	height: 30px;	
+	position: absolute;
+	margin-top: -18px;	
+	top: 50%;
+	left: 0px;
+	overflow: hidden;
+	text-indent: 999px; 
+	z-index: 1000;
+}
+.slider-tablet .bx-next {
+	background: url(https://snipp.ru/demo/193/next.png) 0 0 no-repeat;    
+	display: inline-block; 
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	margin-top: -18px;	
+	top: 50%;
+	right: 0px;
+	overflow: hidden;
+	text-indent: 999px;
+	z-index: 1000;
+}
+
+/* Превью */
+.slider_pager-tablet ul {
+	margin: 0;
+	padding: 0;
+}
+.slider_pager-tablet li {
+	margin: 0 1px 10px 0;
+	display: inline-block;
+}
+  .text-green-tablet .repairs-item{
+    font-size: 18px;
+    line-height: 160%;
+    margin-bottom: 5%;
+}
+  
+/* ------------   аккордеон   8 пунктов      ----------------------------------*/
+details[open] summary ~ * {
+    animation: sweep .5s ease-in-out;
+  }
+  
+  @keyframes sweep {
+    0%    {opacity: 0; margin-left: -10px}
+    100%  {opacity: 1; margin-left: 0px}
+  }
+  .elem-p-details{
+      margin-top: 0;
+  }
+  details > summary {
+    border: none;
+    cursor: pointer;
+    list-style: none;
+  }
+  details p a{
+      font-size: 16px;
+      opacity: 0.4;
+      line-height: 160%;
+      text-decoration: none;
+      color: #333333;
+      font-family:"Rubik";
+      margin-top: 0px;
+  }
+
+  details p a:hover{
+    color:#008080;
+  }
+
+  details p a:link{
+      opacity: 0.7;
+  }
+
+details, summary{
+    margin:0;
+    padding: 0;
+}
+.article-repairs .accordeon{
+    font-weight: 500;
+     font-family: "Exo 2";
+     font-size: 24px;
+     line-height: 160%;
+     color: #333333;
+    
+ }
+ .accordeon .elem-p{
+       margin-top: 5%;
+ }
+ .icon-left{
+     padding-right: 10px;
+ }
+ .arrow-right{
+     float: right;
+ }
+ .arrow-down{
+    float: right;
+    margin-top: -35px;
+    background-color: white;
+ }
+ hr{
+     margin-top: -5%;
+     padding: 0;
+     background-color: #008080;
+     color:#008080;
+     border: none;
+     height: 1px;
+ }
+
+
+ /*   ------------  кнопка позвонить мастеру после аккордеона -------------- */
+
+ .btn-block-center{
+    display: flex;
+  justify-content: center;
+
+ }
+.btn-header-master{
+    margin-top: 20px; 
+    
+}
+.green-item-tablet{
+    margin-left: 0px;
+    width: 100%;
+}
+
+.block-item-tablet{
+    margin-top: 10%;
+
+}
+
+
+ /*  ----------зеленый-------- блок -------------- */
+
+ .container-flex-pic{
+    margin-top: 8%;   
+}
+
+/* -------------------картинки ------------------ */
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  
+}
+
+:active,
+:hover, 
+:focus {
+   outline: 0;
+   outline-offset: 0;
+}
+.input-style{
+    height: 50px;
+    width: 400px;
+    border-radius: 6px;
+    border: none;
+} 
+.container-green_{
+    height: 525px;
+
+}
+.repairs-item .text-departure{
+     margin-top: 10%; 
+}
+summary.repairs-item__{
+margin-top: -10px;
+}
+/* ********************EDIT***********EDIT************ */
+}
+
+
+
+/* *************************МОБИЛЬНАЯ ВЕРСИЯ*********** */
+
+@media only screen
+and (max-device-width: 360px)
+{
+   
+       
+html{
+    overflow-x: hidden; 
+    
+}
+
+body
+{ 
+   
+}
+button{  
+     height: 50px;
+     border-radius: 6px;
+     text-transform: uppercase;
+     font-family: "Rubik";
+     font-size: 14px;
+     border: none;
+ }
+ button:hover{
+     cursor: pointer;
+ }
+
+ /* ------- стилизация   списка зеленого блока ------- */
+
+.wrapper,
+.block-express,
+.block-express-order{
+    margin-left: 16px;
+    margin-right: 16px;
+    width: 328px;
+    align-items: center;
+}
+
+ /*----------------  вводный контент  header-------------- */
+.header{
+    margin-top: 12%;
+    position: relative;
+} 
+
+.container-header{
+    font-family: "Exo 2";
+    font-style: normal;
+    
+}
+.car-header{
+    /* position: absolute; */
+    max-width: inherit;
+    top: 0;
+ }
+h1{
+    font-size: 40px;
+    font-weight: 900;
+    color: #008080;
+}
+.container-header p{
+    font-size: 36px;
+    font-weight: bold;
+    color: #333333;
+}
+
+/* --------кнопки вводного контента ---------- */
+.btn-header-master, .btn-header-prices{
+    width: 190px;
+}
+.btn-header-master, .btn-header-prices:hover{
+    background-color: #008080 ;
+    color: #f0f6f6;
+    
+}
+.btn-header-master:hover{
+    background-color: #00A3A3 ;
+}
+.btn-header-prices{
+    border: 3px solid #008080 ;
+}
+.btn-header-prices{
+    background-color: #e5e5e5; 
+}
+.btn-header-prices:active, .btn-header-master:active {
+    background-color: #008080 ;
+    box-shadow: inset 0px 4px 10px rgba(0,0,0,0.15);
+    color: #eee;
+  }
+
+/* --------кнопки вводного контента ---------- */
+.btn-header-master, .btn-header-prices{
+    margin-left: 0px; 
+    display: block;
+}
+
+.btn-header-master{
+    margin-top: 20%;
+}
+.btn-header-master_{
+    position: absolute;
+}
+
+/*---- 2ой блок   опыт и работа 4е пункта */
+
+.article-list{
+    margin-top: 20%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+.article-list div{
+    width: 120px;
+    margin: 6%;
+    margin-top: 15%;
+   
+}
+
+.article-list img{
+    position: absolute;
+    opacity: .1;
+}
+
+
+.article-list{
+    font-size: 14px;
+    line-height: 160%;
+    color:#333333;
+    font-family: "Rubik";
+    margin-top: 15%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    line-height: 160%;
+}
+.article-list p{
+    margin-top: 20%
+}
+
+/* ----подчеркивание span------ */
+
+.span-underline{
+    text-decoration-line: underline;
+    text-decoration-color: #FCBE00;
+    text-underline-offset: 15%;
+    text-decoration-thickness: 3px;
+}
+
+
+
+.article-vag{
+    column-count: 1;
+    margin-top: 20%;
+    font-family: "Rubik";
+    font-size: 18px;
+    color: rgba(51,51,51, 0.8);  
+}
+
+/* --------------------H2 заголовок  марок авто------------ */
+
+.article-vag h2,
+.container-box{
+    margin-top: 0;
+    font-family: "Exo 2";
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 29px;
+    color: #333333;
+} 
+.article-vag_{
+    margin-top: 0;
+}
+
+.img-left, .img-right{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+
+}
+
+  .list-diagnostic-left
+  .list-diagnostic-right,
+  .list-diagnostic-descrptn{
+  background-color: #FAFDFD;
+  height: 310px; 
+  top: 8%;
+  z-index: 2;
+  }
+  .img-descrptn{
+    margin: 0;
+  padding: 0;
+  width: 374px;
+  height: 670px;
+  margin-top: 10%;
+  }
+  .list-diagnostic-right p,
+  .list-diagnostic-left p,
+  .list-diagnostic-descrptn p{
+      line-height: 160%;
+      color: #333333;
+      margin-top: 1%;
+      font-size: 12px;
+      font-family: "Rubik";
+  }
+  figcaption h4{
+    font-size: 16px;
+    font-family: "Exo 2";
+    font-weight: bold;
+    color: #333333;
+    padding-top:7%; 
+    line-height: 160%;
+}
+.text-two{
+    font-size: 14px;
+}
+
+
+.container_transport figcaption{
+    font-size: 18px;
+    line-height: 28.8px;
+    color: #333333;
+    font-family: "Rubik";
+    font-weight: 500;
+    text-align: center;
+  }
+  .wrapper .container_transport img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+
+
+
+  /* *********** определение      список  (к картинке)    -----------------     */ 
+
+  .container-green-express{
+    margin-top: 20%;
+    height: 331px;
+    background-color: #008080;
+    position: relative;
+ width: 100%;
+}
+
+.container-green-tablet{
+    height: 471px;
+    
+}
+.container-green_{
+    margin-left: 0;
+    padding-left: 0;
+}
+
+
+
+.block-express-order,
+.block-express{
+    z-index: 2;
+    position: relative;
+    margin: 0 auto; 
+    color: #FAFDFD;
+    font-family:"Rubik";
+    align-items: center;
+ 
+   
+}
+.block-express{  
+    text-align: center;
+    font-size: 18px;  
+    padding-top: 5%;;
+  }
+.block-express h2 strong
+{
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 48px;
+    font-family: "Exo 2";
+}
+.block-express-order h2 b{
+    font-size: 24px;
+    font-weight: bold;
+    font-family: "Exo 2";
+    
+}
+.text-opasity{
+    opacity: 0.6;
+    margin-top: 10%;
+}
+.btn-express{
+    background-color: #FCBE00;
+    width: 230px;
+    height: 50px;
+    font-size: 14px;
+    color: #333333;
+    margin-top: 10%;
+}
+.btn-express-call{
+    margin-top: 5%;
+}
+.btn-express:hover{
+    background-color: #FFD145;
+}
+.btn-express:active{
+    box-shadow: inset 0px 4px 10px rgba(0,0,0,0.15);
+}
+.block-express-order .right-green-list p{
+margin-bottom: 6%;
+line-height: 160%;
+}
+
+.cars-item{
+    height: 60px;
+     }
+    .indent-span{
+         padding-left: 5%;
+         margin-top: 7%; 
+         position:absolute;
+    }
+
+    /* ----   --------  как заказать выезд специалиста--------- */
+    
+.repairs-item .text-departure{
+    font-size: 24px;
+ line-height: 29px; 
+}
+.repairs-item p{
+    line-height:160%;
+}
+
+.repairs-item strong span{
+    color: #FCBE00;
+}
+.map-item
+{
+    font-family: "Exo 2"; 
+   
+}
+
+
+/*    -----------       карта москвы и ремонт  список-----------  */
+
+.article-repairs-tablet{
+    margin-top: 10%;
+
+}
+
+.repairs-item .text-first{
+    font-size: 14px;
+}
+.repairs-item {
+    font-family: "Rubik";
+    font-size: 12px;
+    line-height: 160%;
+ 
+}
+.repairs-item p img{
+    width: 328px;
+}
+.container-box-center{
+    text-align: center;
+    margin-top: 30%;
+}
+.slider, .slider_pager, .btn-express-desktop{
+    display: none;
+}
+
+
+
+
+/*      -----------       карусель марок  машин  ----------- */
+.center{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    width: 10em;
+ 
+}
+.pagination a {
+    color: black;
+    margin-left: 10px;
+    text-decoration: none;
+
+}
+
+.pagination a.active {
+    background-color: #FCBE00;
+    color: white;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
+.dot {
+    height: 10px;
+    width: 10px;
+    background-color: #DCE8FF;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+.slider-tablet {
+	height: 100px;
+	overflow: hidden;
+	margin-bottom: 20px;
+	text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 328px; 
+    align-items: center;
+}
+.slider-tablet ul {
+	margin: 0px;
+}
+
+.slider-tablet li a{
+	margin-left: 1%;
+	margin-right: 1%;
+	text-decoration: none;
+	color: #333333;
+	font-family: "Rubik";
+  font-size: 14px;
+  display: inline-block;
+}
+/* Кнопки управления */
+.bx-wrapper {
+	position: relative;
+}
+.slider-tablet .bx-controls-direction {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 100px;
+}
+.slider-tablet .bx-controls-direction a:hover {
+	filter: brightness(90%);
+}
+.slider-tablet .bx-prev {
+	background: url(https://snipp.ru/demo/193/prev.png) 0 0 no-repeat; 
+	display: inline-block; 
+	width: 30px;
+	height: 30px;	
+	position: absolute;
+	margin-top: -18px;	
+	top: 50%;
+	left: 0px;
+	overflow: hidden;
+	text-indent: 999px; 
+	z-index: 1000;
+}
+.slider-tablet .bx-next {
+	background: url(https://snipp.ru/demo/193/next.png) 0 0 no-repeat;    
+	display: inline-block; 
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	margin-top: -18px;	
+	top: 50%;
+	right: 0px;
+	overflow: hidden;
+	text-indent: 999px;
+	z-index: 1000;
+}
+
+/* Превью */
+.slider_pager-tablet ul {
+	margin: 0;
+	padding: 0;
+}
+.slider_pager-tablet li {
+	margin: 0 1px 10px 0;
+	display: inline-block;
+}
+  .text-green-tablet .repairs-item{
+    font-size: 18px;
+    line-height: 160%;
+    margin-bottom: 5%;
+}
+
+  
+/* ------------   аккордеон   8 пунктов      ----------------------------------*/
+details[open] summary ~ * {
+    animation: sweep .5s ease-in-out;
+  }
+  
+  @keyframes sweep {
+    0%    {opacity: 0; margin-left: -10px}
+    100%  {opacity: 1; margin-left: 0px}
+  }
+  .elem-p-details{
+      margin-top: 0;
+  }
+  details > summary {
+    border: none;
+    cursor: pointer;
+    list-style: none;
+  }
+  details p a{
+      font-size: 14px;
+      opacity: 0.4;
+      line-height: 160%;
+      text-decoration: none;
+      color: #333333;
+      font-family:"Rubik";
+      margin-top: 0px;
+  }
+
+  details p a:hover{
+    color:#008080;
+  }
+
+  details p a:link{
+      opacity: 0.7;
+  }
+
+details, summary{
+    margin:0;
+    padding: 0;
+}
+.article-repairs .accordeon{
+    font-weight: 500;
+     font-family: "Exo 2";
+     font-size: 14px;
+     line-height: 160%;
+     color: #333333;
+    
+ }
+ .accordeon .elem-p{
+       margin-top: 10%;
+ }
+ .icon-left{
+     padding-right: 10px;
+ }
+ .arrow-right{
+     float: right;
+     margin-top: -10px;
+ }
+ .arrow-down{
+    float: right;
+    margin-top: -35px;
+    background-color: white;
+ }
+ hr{
+     margin-top: -5%;
+     padding: 0;
+     background-color: #008080;
+     color:#008080;
+     border: none;
+     height: 1px;
+ }
+
+ /*   ------------  кнопка позвонить мастеру после аккордеона -------------- */
+
+ .btn-block-center{
+    display: flex;
+  justify-content: center;
+ }
+
+
+.block-item-tablet{
+    margin-top: 10%;
+}
+
+
+:active,
+:hover, 
+:focus {
+   outline: 0;
+   outline-offset: 0;
+}
+.input-style{
+    height: 50px;
+    width: 328px;
+    border-radius: 6px;
+    border: none;
+     margin-top: 3%; 
+} 
+.container-green_{
+    height: 466px;
+}
+.block-express-order .article-repairs {
+    padding-top: 7%;
+}
+
+.left-img-group,
+.right-img-group{
+    position: absolute;
+    top       : 50%;
+    transform : translate(-50%, -50%); 
+    
+}
+.right-img-group{
+    right: -70%;
+    height: 330px;
+
+}
+.left-img-group{
+    left: 10%;
+    height: 330px;
+}
+.green-item-tablet .btn-express-p{
+    text-align: center; 
+}
+}
